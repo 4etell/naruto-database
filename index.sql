@@ -1,0 +1,11 @@
+CREATE INDEX idx_clan_name ON clans USING HASH (lower(name));
+CREATE INDEX idx_county_name ON countries USING HASH (lower(name));
+CREATE INDEX idx_creature_name ON creatures USING HASH (lower(name));
+CREATE INDEX idx_element_name ON elements USING HASH (lower(name));
+CREATE INDEX idx_hand_seals_name ON hand_seals USING HASH (lower(name));
+CREATE INDEX idx_organization_name ON organizations USING HASH (lower(name));
+CREATE INDEX idx_shinobi_name ON shinobi USING HASH (lower(name));
+CREATE INDEX idx_team_name ON teams USING HASH (lower(name));
+CREATE INDEX idx_technique_name ON techniques USING HASH (lower(name));
+CREATE INDEX idx_village_name ON villages USING HASH (lower(name));
+CREATE INDEX idx_weapon_name ON weapons USING HASH (lower(name));
